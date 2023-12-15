@@ -1,8 +1,9 @@
 import { NavLink } from 'react-router-dom';
+import { Player } from '@lottiefiles/react-lottie-player';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
-import Fotter from './Fotter';
+import Fotter from './Footer';
 import Foot from "./Foot";
 
 const Home = () => {
@@ -14,13 +15,16 @@ const Home = () => {
             <h1 className='display-6'>Hello! I am Carlos</h1>
             <h1 className='display-6 custom-font'>Systems engineer in training.</h1>
             <p className='pt-5'>Full stack Development</p>
-            <NavLink to='/projects'><button className='btn btn-primary custom-btn ps-5 pe-5 fw-bold mt-2'>Download my cv</button></NavLink>
+            <NavLink to='/projects'><button className='btn btn-primary custom-btn ps-5 pe-5 fw-bold mt-2'>Look my projects</button></NavLink>
           </div>
 
           <div className="d-flex flex-column">
-            <img
-              src='../../public/foto.jpg'
-              style={{ maxHeight: '400px', maxWidth: '400px' }}
+            <Player
+              src='https://lottie.host/19dc4592-543d-47ff-b9ec-8a7756947b38/EC5JaRPDaH.json'
+              className="player"
+              loop
+              autoplay
+              style={{  maxWidth: '600px', height: 'auto'  }}
             />
           </div>
         </div>
